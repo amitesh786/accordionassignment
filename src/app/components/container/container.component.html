@@ -1,0 +1,20 @@
+<div class="panel">
+    <header>
+        <title>{{mainTitle}}
+        </title>
+    </header>
+
+    <details *ngFor="let panel of panels; let i = index">
+        <summary>
+            <ul>
+                <li class="titleName">{{panel.title}}</li>
+                <li class="titleValue">{{panel.subtitle}}</li>
+            </ul>
+        </summary>
+
+        <div *ngIf="i != 3" class="content">
+            <p *ngIf="i == 1">{{panel.content}}</p>
+        </div>
+    </details>
+
+</div>

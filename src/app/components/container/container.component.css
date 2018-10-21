@@ -1,0 +1,170 @@
+div.panel {
+    max-width: calc(85% - 300px);
+    margin: auto;
+    margin-top: calc(5% - 0px);
+}
+
+header {
+    background:#fff;
+    font-size:16px;
+    border-bottom: 1px solid #e4e6e5;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    display:flex;
+    height: 60px;
+    line-height: 10px;
+}
+
+header div.content {
+    padding:0px 25px 25px 25px;
+    font-size: 12px;
+    color: #333;
+}
+
+details {
+    background:#fff;
+    font-size:16px;
+    border-bottom: 1px solid #e4e6e5;
+    display:flex;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    height: auto;
+}
+
+details div.content {
+    padding:0px 25px 25px 25px;
+    color: #333;
+    font-size: 12px;
+}
+
+details[open] summary:after {
+    content: "expand_less";
+    font-family: 'Material Icons';
+}
+
+details[open]{
+    margin-top:30px;
+    margin-bottom:30px;
+    border:none;
+    border-radius: 2px;
+}
+
+details[open]:first-child{
+    margin-top:0;
+    margin-bottom:30px;
+    border:none;
+}
+
+details[open]:last-child{
+    margin-top:0px;
+    margin-bottom:0px;
+    border:none;
+}
+
+summary {
+    outline:none;
+    cursor: pointer;
+    padding: 16px 25px;
+    color:#212121;
+    position: relative;
+    font-size: 15px;
+}
+
+title {
+    outline: none;
+    padding: 25px;
+    color: #333;
+    position: relative;
+    font-size: 18px;
+    display: inline;
+}
+
+summary:hover{
+    background: rgb(245,245,245);
+}
+
+title:hover{
+    background:rgb(245,245,245);
+}
+
+details[open] summary:hover{
+    background:none;
+}
+
+summary ul {
+    padding-left: 0;
+    list-style: none;
+    display: block;
+    align-items: center;
+}
+summary ul li {
+    flex: 1 100%;
+    flex-flow: row wrap;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "expand_more";
+    font-family: 'Material Icons';
+    color: #0465ac;
+    font-size: 26px;
+    padding: 0 0 25px 0;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    bottom: 0;
+    right: 0;
+    width: 6%;
+}  
+
+.titleName {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0465ac;
+    font-family: 'Source Sans Pro Semibold', sans-serif;
+} 
+
+.titleValue {
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 12px;
+    color: #999;
+    font-family: 'Source Sans Pro Semibold', sans-serif;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* On screens that are 1366px or more, set the background color to blue */
+@media screen and (max-width: 1366px) {
+
+    div.panel{
+        max-width: calc(85% - 300px);
+        margin: auto;
+        margin-top: calc(5% - 0px);
+    }
+}
+
+/* On screens that are 1280px or 1366px, set the background color to blue */
+@media screen and (max-width: 1280px) {
+
+    div.panel{
+        max-width: calc(75% - 200px);
+        margin: auto;
+        margin-top: calc(5% - 0px);
+    }
+}
+
+/* On screens that are 840px or less, set the background color to olive */
+@media screen and (max-width: 840px) {
+
+    div.panel{
+        max-width: calc(65% - 200px);
+        margin: auto;
+        margin-top: calc(5% - 0px);
+    }    
+}

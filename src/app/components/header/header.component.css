@@ -1,0 +1,9 @@
+.header-row {
+    background: rgb(51,51,51);
+    position: relative;
+    min-width: inherit;
+    padding: 25px;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+}
