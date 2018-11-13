@@ -1,4 +1,4 @@
-import { TestBed, async, ComponentFixture } from '@angular/core/testing';
+import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -7,8 +7,8 @@ describe('AppComponent', () => {
         TestBed.configureTestingModule({
         declarations: [ 
             AppComponent
-        ],
-
+        ]
         }).compileComponents();
-    }));    
+    }));
+
 });

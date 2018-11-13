@@ -8,6 +8,7 @@ export class ServiceAccordion {
     // source for input file
     apiUrl = 'http://localhost:4200/src/app/services/service.json';
     
+    // using constructor, injecting http of type HttpClient
     constructor(private http: HttpClient) {}
 
     // Get the data from input json file

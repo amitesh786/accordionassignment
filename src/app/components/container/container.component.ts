@@ -7,14 +7,22 @@ import { ServiceAccordion } from '../../services/ServiceAccordion';
     styleUrls: ['./container.component.css'],
     providers: [ServiceAccordion]
 })
+
 export class ContainerComponent implements OnInit {
 
+    // inferred as panels: any[]
     panels: Array<any>;
+
+    // inferred as mainTitle: any( should be String)
     mainTitle: any;
+
+    // inferred as collectInfo: any( should be object contains collection)
     collectInfo: any;
 
+    // using constructor, injecting serviceAccordion of type ServiceAccordion
     constructor(private serviceAccordion: ServiceAccordion) { }
 
+    // using ngOnInit, to subscribe the service and get data
     ngOnInit() {
         this.serviceAccordion.getDataFromJson().subscribe(
             res => {
