@@ -1,0 +1,24 @@
+{
+    "container": "my-accordion",
+    "mainTitle": "Main Accordion Title",
+    "panels": [
+        {
+            "title": "My profile",
+            "subtitle": "Change your profile information, email, and other personal details",
+            "content": "Please enter the detail regarding username, email (-_^)"
+        },
+        {
+            "title": "Change password",
+            "subtitle": "Change your password to access the LMS",
+            "content": "Please enter the password & confirm password (^_^)"
+        },
+        {
+            "title": "Preference",
+            "subtitle": "Set your language and timezone preference",
+            "content": "Select your language and set the timezone what you like...!!!"
+        },
+        {
+            "title": "No description title"
+        }
+    ]
+}
