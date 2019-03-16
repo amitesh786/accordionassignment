@@ -24,6 +24,7 @@ export class ContainerComponent implements OnInit {
 
     // using ngOnInit, to subscribe the service and get data
     ngOnInit() {
+
         this.serviceAccordion.getDataFromJson().subscribe(
             res => {
                 this.collectInfo = res;

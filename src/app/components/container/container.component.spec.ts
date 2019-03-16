@@ -45,7 +45,7 @@ describe('ContainerComponent', () => {
     });
 
     it('Service to check api url', () => {
-        expect(serviceAccordion.apiUrl).toBe("http://localhost:4200/src/app/services/service.json");
+        expect(serviceAccordion.apiUrl).toBe("http://localhost:4200/src/app/services/serviceCustom.json");
     });
 
     it('Service to check get data from json', () => {
