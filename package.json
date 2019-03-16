@@ -1,5 +1,5 @@
 {
-    "name": "accordion",
+    "name": "accordion-app",
     "version": "1.0.0",
     "description": "Accordion",
     "scripts": {
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/amitesh786"
+        "url": "git+https://github.com/amitesh786/accordionassignment/"
     },
     "author": "Amitesh Singh",
     "engines": {
@@ -26,8 +26,16 @@
         "@angular/http": "^6.1.0",
         "@angular/platform-browser": "^6.1.0",
         "@angular/platform-browser-dynamic": "^6.1.0",
+        "@angular/router": "^7.2.9",
+        "angular-datatables": "^7.0.0",
         "angular-webpack-config": "^6.0.1",
+        "bootstrap": "^4.3.1",
         "core-js": "^2.5.4",
+        "datatables.net": "^1.10.19",
+        "datatables.net-dt": "^1.10.19",
+        "jquery": "^3.3.1",
+        "npm-check-updates": "^3.0.8",
+        "npm-check-updates-lite": "^2.14.2",
         "rxjs": "~6.2.0",
         "webpack": "^4.3.0",
         "webpack-merge": "^4.1.0",
@@ -41,9 +49,11 @@
         "@angular/compiler-cli": "^6.1.0",
         "@angular/language-service": "^6.1.0",
         "@types/core-js": "^2.5.0",
+        "@types/datatables.net": "^1.10.16",
         "@types/es6-shim": "^0.31.37",
         "@types/jasmine": "~2.8.8",
         "@types/jasminewd2": "~2.0.3",
+        "@types/jquery": "^3.3.29",
         "@types/node": "^8.10.36",
         "angular2-template-loader": "^0.6.0",
         "awesome-typescript-loader": "^3.5.0",
@@ -60,7 +70,7 @@
         "protractor": "~5.4.0",
         "ts-node": "~7.0.0",
         "tslint": "~5.11.0",
-        "typescript": "~2.7.2",
+        "typescript": "^2.7.2",
         "webpack-cli": "^3.1.2",
         "webpack-dev-server": "^3.1.6"
     }
