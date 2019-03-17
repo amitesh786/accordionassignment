@@ -5,3 +5,11 @@
 .dataTables_empty {
   display: none;
 }
+
+.odd td:last-child {
+    text-align: center;
+}
+
+.even td:last-child {
+    text-align: center;
+}

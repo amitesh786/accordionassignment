@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { DataTableDirective } from 'angular-datatables';
+import { Subject } from 'rxjs';
 
 import GetDataFromJson from '../../services/data.json';
 
@@ -8,10 +9,12 @@ import GetDataFromJson from '../../services/data.json';
     templateUrl: './table.component.html',
     styleUrls: ['./table.component.css']
 })
-export class TableComponent implements OnInit {
+export class TableComponent implements AfterViewInit, OnDestroy, OnInit {
+    @ViewChild(DataTableDirective)
+    dtElement: DataTableDirective;
     dtOptions: DataTables.Settings = {};
 
-    constructor(private http: HttpClient) { }
+    dtTrigger: Subject<any> = new Subject();
 
     ngOnInit(): void {
 
@@ -34,5 +37,23 @@ export class TableComponent implements OnInit {
                 { title: 'children', data: 'children' }
             ]
         };
+    }
+
+    ngAfterViewInit(): void {
+        this.dtTrigger.next();
+    }
+
+    ngOnDestroy(): void {
+        // Do not forget to unsubscribe the event
+        this.dtTrigger.unsubscribe();
+    }
+
+    rerender(): void {
+        this.dtElement.dtInstance.then((dtInstance: DataTables.Api) => {
+            // Destroy the table first
+            dtInstance.destroy();
+            // Call the dtTrigger to rerender again
+            this.dtTrigger.next();
+        });
     }
 }

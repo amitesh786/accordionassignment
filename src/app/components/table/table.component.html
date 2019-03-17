@@ -1,1 +1,7 @@
-<table datatable [dtOptions]="dtOptions" class="striped bordered hover responsive row-border hover"></table>
+<p>
+    <button type="button" class="btn waves-effect waves-light blue btn-outline-success btn-sm" (click)="rerender()">
+        Rerender
+    </button>
+</p>
+
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="striped bordered hover responsive row-border hover"></table>
