@@ -52,7 +52,10 @@ export class TableComponent implements AfterViewInit, OnDestroy, OnInit {
                 { title: 'Phone', data: 'phone' },
                 { title: 'Date', data: 'date' },
                 { title: 'children', data: 'children' }
-            ]
+            ],
+            colReorder: {
+                order: [0,1,2,3,4,5,6,7,8]
+            }
         };
     }
 

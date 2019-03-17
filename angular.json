@@ -27,6 +27,7 @@
                     "node_modules/bootstrap/dist/css/bootstrap-grid.css",
                     "node_modules/datatables.net-dt/css/jquery.dataTables.css",
                     "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
+                    "node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.css",
                     "src/styles.css"                    
                 ],
                 "scripts": [
@@ -37,7 +38,8 @@
                     "node_modules/datatables.net-buttons/js/buttons.colVis.js",
                     "node_modules/datatables.net-buttons/js/buttons.flash.js",
                     "node_modules/datatables.net-buttons/js/buttons.html5.js",
-                    "node_modules/datatables.net-buttons/js/buttons.print.js"
+                    "node_modules/datatables.net-buttons/js/buttons.print.js",
+                    "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"
                 ]
             },
             "configurations": {
@@ -89,6 +91,7 @@
                         "node_modules/bootstrap/dist/css/bootstrap-grid.css",
                         "node_modules/datatables.net-dt/css/jquery.dataTables.css",
                         "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
+                        "node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.css",
                         "src/styles.css"
                     ],
                     "scripts": [
@@ -99,7 +102,8 @@
                         "node_modules/datatables.net-buttons/js/buttons.colVis.js",
                         "node_modules/datatables.net-buttons/js/buttons.flash.js",
                         "node_modules/datatables.net-buttons/js/buttons.html5.js",
-                        "node_modules/datatables.net-buttons/js/buttons.print.js"
+                        "node_modules/datatables.net-buttons/js/buttons.print.js",
+                        "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"
                     ],
                     "assets": [
                         "src/favicon.ico",
