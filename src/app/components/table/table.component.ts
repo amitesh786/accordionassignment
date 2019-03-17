@@ -19,12 +19,13 @@ export class TableComponent implements AfterViewInit, OnDestroy, OnInit {
     ngOnInit(): void {
 
         this.dtOptions = {
-            dom: 'lBfrtip',
+            dom: 'l<"p-3">Bfrtip',
             pagingType: 'full_numbers',
             pageLength: 2,
             serverSide: false,
             processing: true,
             data: GetDataFromJson,
+            responsive: true,
             buttons: [
                 'columnsToggle', // All columns are present
                 {
