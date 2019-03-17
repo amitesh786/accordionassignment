@@ -12,19 +12,36 @@ import GetDataFromJson from '../../services/data.json';
 export class TableComponent implements AfterViewInit, OnDestroy, OnInit {
     @ViewChild(DataTableDirective)
     dtElement: DataTableDirective;
-    dtOptions: DataTables.Settings = {};
+    dtOptions: any = {}; //DataTables.Settings = {};
 
     dtTrigger: Subject<any> = new Subject();
 
     ngOnInit(): void {
 
         this.dtOptions = {
+            dom: 'lBfrtip',
             pagingType: 'full_numbers',
             pageLength: 2,
             serverSide: false,
             processing: true,
-
             data: GetDataFromJson,
+            buttons: [
+                'columnsToggle', // All columns are present
+                {
+                    extend: 'colvis', // Column visibility
+                    className: 'btn-outline-success'
+                },
+                'copy',
+                'print',
+                'excel',
+                // {
+                //     text: 'Custom button',
+                //     key: '1',
+                //     action: function (e, dt, node, config) {
+                //         alert('Button activated');
+                //     }
+                // }
+            ],
             columns: [
                 { title: 'ID', data: 'id' },
                 { title: 'Sex', data: 'sex' },
